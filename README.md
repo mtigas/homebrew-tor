@@ -4,6 +4,8 @@ This repository contains **[tor][tor]-related** formulae for [Homebrew][brew],
 primarily so that users can use the latest 0.2.3.X tor alphas, along with
 [obfsproxy][obfsproxy] support.
 
+**You will need to [install Homebrew][brew_install] to use this**, see [here][brew_install].
+
 Currently contains replacement (or new) formulae for:
 
 * Tor 0.2.3.X alpha version of tor
@@ -11,7 +13,8 @@ Currently contains replacement (or new) formulae for:
 * Up-to-date versions of [Arm][arm]
 
 [tor]: https://www.torproject.org/
-[brew]: https://github.com/mxcl/homebrew
+[brew]: http://mxcl.github.com/homebrew/
+[brew_install]: https://github.com/mxcl/homebrew/wiki/installation
 [obfsproxy]: https://www.torproject.org/projects/obfsproxy.html.en
 [arm]: http://www.atagar.com/arm/
 
