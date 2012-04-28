@@ -19,18 +19,7 @@ Currently contains replacement (or new) formulae for:
 
 There are two methods to install packages from this repository.
 
-### Method 1: Raw URL
-
-First, find the raw URL for the formula you want. For example, the raw URL for
-the `obfsproxy` formula is:
-
-    https://github.com/mtigas/homebrew-tor/raw/master/Formula/obfsproxy.rb
-
-Once you know the raw URL, simply use `brew install [raw URL]`, like so:
-
-    brew install https://github.com/mtigas/homebrew-tor/raw/master/Formula/obfsproxy.rb
-
-### Method 2: Tap
+### Method 1: Tap
 
 Tap the repository into your brew installation
 
@@ -42,3 +31,16 @@ any of the packages in this by manually denoting the "tap" prefix (mtigas/tor):
 
 	brew install mtigas/tor/obfsproxy
 	brew install mtigas/tor/arm
+
+### Method 2: Raw URL
+
+First, find the raw URL for the formula you want. For example, the raw URL for
+the `obfsproxy` formula is:
+
+    https://github.com/mtigas/homebrew-tor/raw/master/Formula/obfsproxy.rb
+
+Once you know the raw URL, simply use `brew install [raw URL]`, like so:
+
+    brew install https://github.com/mtigas/homebrew-tor/raw/master/Formula/obfsproxy.rb
+
+(Due to dependencies, you may need to perform `brew tap mtigas/tor` as in Method 1.)
