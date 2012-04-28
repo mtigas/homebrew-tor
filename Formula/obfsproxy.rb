@@ -8,7 +8,7 @@ class Obfsproxy < Formula
   head 'git://git.torproject.org/git/obfsproxy.git'
 
   depends_on 'libevent'
-  depends_on 'tor'
+  depends_on 'mtigas/tor/tor'
 
   def install
     system "./autogen.sh" if ARGV.build_head?
