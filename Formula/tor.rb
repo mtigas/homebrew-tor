@@ -8,6 +8,7 @@ class Tor < Formula
   head 'git://git.torproject.org/git/tor.git'
 
   depends_on 'libevent'
+  depends_on 'openssl'
 
   def install
     system "./autogen.sh" if ARGV.build_head?
