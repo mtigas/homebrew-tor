@@ -2,9 +2,9 @@ require 'formula'
 
 class Tor < Formula
   homepage 'https://www.torproject.org/'
-  version "0.2.3.20"
-  url 'https://archive.torproject.org/tor-package-archive/tor-0.2.3.20-rc.tar.gz'
-  sha256 'baca355aa606ded00fff2a8c7ede38400e42810c02629cf266190d2be8d5bdc3'
+  version "0.2.3.25"
+  url 'https://archive.torproject.org/tor-package-archive/tor-0.2.3.25.tar.gz'
+  sha256 'bb2d6f1136f33e11d37e6e34184143bf191e59501613daf33ae3d6f78f3176a0'
   head 'git://git.torproject.org/git/tor.git'
 
   depends_on 'libevent'

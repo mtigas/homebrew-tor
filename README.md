@@ -1,14 +1,14 @@
 # homebrew-tor
 
 This repository contains **[tor][tor]-related** formulae for [Homebrew][brew],
-primarily so that users can use the latest 0.2.3.X tor pre-releases, along with
+primarily so that users can use the latest 0.2.3.X tor stable series, along with
 [obfsproxy][obfsproxy] support.
 
 **You will need to [install Homebrew][brew_install] to use this**, see [here][brew_install].
 
 Currently contains replacement (or new) formulae for:
 
-* Tor 0.2.3.X pre-release version of tor
+* Tor 0.2.3.X version of tor
 * [obfsproxy][obfsproxy]
 * Up-to-date versions of [Arm][arm]
 
