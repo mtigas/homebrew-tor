@@ -7,11 +7,13 @@ class Obfsproxy < Formula
   sha256 '6e0ed147e9be4b9f89862b5e2597d355427e977a69c8dfb6e15c04530d3bedb3'
   head 'git://git.torproject.org/git/obfsproxy.git'
 
+  depends_on 'pkg-config'
   depends_on 'libevent'
   depends_on 'openssl'
   depends_on 'mtigas/tor/tor'
 
   def install
+    ENV.append 'PKG_CONFIG', '/usr/local/bin/pkg-config'
     system "./autogen.sh" if ARGV.build_head?
     system "./configure", "--disable-dependency-tracking", "--prefix=#{prefix}"
     system "make install"
