@@ -7,12 +7,21 @@ class Tor < Formula
   sha256 'bb2d6f1136f33e11d37e6e34184143bf191e59501613daf33ae3d6f78f3176a0'
   head 'git://git.torproject.org/git/tor.git'
 
+  option 'with-upnp', 'Enable upnp "PortForwarding" option.'
+
   depends_on 'libevent'
   depends_on 'openssl'
+  depends_on 'miniupnpc' if build.include? 'with-upnp'
 
   def install
+    configargs = %W[
+             --prefix=#{prefix}
+             --disable-dependency-tracking
+           ]
+    configargs << 'enable-upnp' if build.include? 'with-upnp'
+
     system "./autogen.sh" if ARGV.build_head?
-    system "./configure", "--disable-dependency-tracking", "--prefix=#{prefix}"
+    system "./configure", *configargs
     system "make install"
 
     plist_path.write startup_plist
