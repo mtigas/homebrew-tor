@@ -18,7 +18,7 @@ class Tor < Formula
              --prefix=#{prefix}
              --disable-dependency-tracking
            ]
-    configargs << 'enable-upnp' if build.include? 'with-upnp'
+    configargs << '--enable-upnp' if build.include? 'with-upnp'
 
     system "./autogen.sh" if ARGV.build_head?
     system "./configure", *configargs
