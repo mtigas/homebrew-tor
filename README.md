@@ -10,13 +10,11 @@ Currently contains replacement (or new) formulae for:
 
 * Tor 0.2.3.X version of tor
 * [obfsproxy][obfsproxy]
-* Up-to-date versions of [Arm][arm]
 
 [tor]: https://www.torproject.org/
 [brew]: http://mxcl.github.com/homebrew/
 [brew_install]: https://github.com/mxcl/homebrew/wiki/installation
 [obfsproxy]: https://www.torproject.org/projects/obfsproxy.html.en
-[arm]: http://www.atagar.com/arm/
 
 ## Usage
 
@@ -28,12 +26,12 @@ Tap the repository into your brew installation
 
     brew tap mtigas/tor
 
-You'll notice that `arm` and `tor` throw errors -- this is because those formulae
-cannot technically replace the original ones in Homebrew core. You can install
-any of the packages in this by manually denoting the "tap" prefix (mtigas/tor):
+You'll notice that `brew install tor` throws warnings -- this is because
+the formula cannot technically replace the original one in Homebrew core.
+You can install any of the packages in repo by manually denoting the "tap"
+prefix (mtigas/tor):
 
-	brew install mtigas/tor/obfsproxy
-	brew install mtigas/tor/arm
+	brew install mtigas/tor/tor
 
 ### Method 2: Raw URL
 
