@@ -59,9 +59,6 @@ class Tor < Formula
       mkdir -p ~/Library/LaunchAgents
       cp #{plist_path} ~/Library/LaunchAgents/
       launchctl load -w ~/Library/LaunchAgents/#{plist_path.basename}
-
-    obfsproxy support is provided by another package and can be installed:
-      brew install obfsproxy
     EOS
   end
 end
