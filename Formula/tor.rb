@@ -3,7 +3,7 @@ require 'formula'
 class Tor < Formula
   homepage 'https://www.torproject.org/'
   version "0.2.4.16"
-  #url 'https://archive.torproject.org/tor-package-archive/tor-0.2.4.11-alpha.tar.gz'
+  #url 'https://archive.torproject.org/tor-package-archive/tor-0.2.4.14-alpha.tar.gz'
   url 'https://www.torproject.org/dist/tor-0.2.4.16-rc.tar.gz'
   sha256 '74389d688321f2671bda229b330806e7dfbc685b38bd2ee1aa90d6bc05ed93d9'
   head 'git://git.torproject.org/git/tor.git'
