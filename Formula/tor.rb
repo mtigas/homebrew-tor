@@ -2,7 +2,7 @@ require 'formula'
 
 class Tor < Formula
   homepage 'https://www.torproject.org/'
-  version "0.2.4.16"
+  version "0.2.5.1"
   #url 'https://archive.torproject.org/tor-package-archive/tor-0.2.4.14-alpha.tar.gz'
   url 'https://www.torproject.org/dist/tor-0.2.5.1-alpha.tar.gz'
   sha256 '3100d8f0ccb296e82f1d3602266d4dcde801daace82af74f5f27ee2fca7bb4a8'
